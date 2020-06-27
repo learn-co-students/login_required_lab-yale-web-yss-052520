@@ -1,17 +1,17 @@
 class SecretsController < ApplicationController
-    # before_action :check  
+    before_action :check  
 
     def show 
-        unless session.include? :name 
-            redirect_to '/login' 
-        end 
         @username = current_user 
     end 
 
-    # private 
+    def secret 
+    end 
+
+    private 
     
-    # def check
-    #     return head(:forbidden) unless session.include? :user  
-    # end 
+    def check
+        return redirect_to '/login' unless session.include? :name  
+    end 
 
 end 
