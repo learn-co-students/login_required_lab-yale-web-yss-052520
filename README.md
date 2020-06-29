@@ -1,4 +1,4 @@
-# Login Required Lab
+o# Login Required Lab
 
 ## Objectives
 
